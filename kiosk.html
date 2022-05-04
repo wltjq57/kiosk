@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
+  <div id="wrap">
   <!-- 헤더 -->
   <header>
     <div class="logoimg">
-
+      <img src="images/logo.webp" id="logo" alt="로고">
     </div>
     <nav>
       <ul id="topmenu">
@@ -23,18 +25,60 @@
   <main>
     <section id="tabmenu">
       <input type="radio" id="tab1" name="tab" checked>
-      <label for="tab1">메뉴 1</label>
+      <label for="tab1">햄버거</label>
       <input type="radio" id="tab2" name="tab">
-      <label for="tab2">메뉴 2</label>
+      <label for="tab2">사이드</label>
       <input type="radio" id="tab3" name="tab">
-      <label for="tab3">메뉴 3</label>
-    </section>
-  </main>
+      <label for="tab3">음 료</label>
 
+      <div id="burger" class="tab">
+        <ul>
+          <li><img src="images/burger1.png">아라비아따 리코타 치킨버거</li> 
+          <li><img src="images/burger2.png">빅맥</li> 
+          <li><img src="images/burger3.png">맥스파이시 상하이 버거</li> 
+          <li><img src="images/burger4.png">1955 버거</li> 
+          <li><img src="images/burger5.png">더블 필레오피쉬</li> 
+          <li><img src="images/burger6.png">필레 오 피쉬</li>
+        </ul>
+      </div>
+
+      <div id="side" class="tab">
+        <ul>
+        <li><img src="images/side1.png">스파이시 맥너겟</li> 
+        <li><img src="images/side2.png">소시지 스낵랩</li> 
+        <li><img src="images/side3.png">상하이 치킨 스낵랩</li> 
+        <li><img src="images/side4.png">골든 모짜렐라 치즈스틱</li> 
+        <li><img src="images/side5.png">후렌치 후라이</li> 
+        <li><img src="images/side6.png">맥너겟</li>
+        </ul>
+      </div>
+
+      <div id="juice" class="tab">
+        <ul>
+        <li><img src="images/juice1.png">바닐라 쉐이크</li> 
+        <li><img src="images/juice2.png">딸기 쉐이크</li> 
+        <li><img src="images/juice3.png">초코 쉐이크</li> 
+        <li><img src="images/juice4.png">오렌지 주스</li> 
+        <li><img src="images/juice5.png">코카-콜라</li> 
+        <li><img src="images/juice6.png">코카-콜라 제로</li>
+        </ul>
+      </div>
+    </section>
+ 
+
+  <!-- 선택 합계 -->
+  <section id="basket">
+    <h1>주문 내역</h1>
+    <button id="on" class="" onclick="ordercom();">주문하기</button>
+    <button id="off" class="reset" onclick="reset();">취소하기</button>
+    <script src="js/script.js"></script>
+  </section>
+  </main>
   <!-- 푸터 -->
   <footer>
     <br/>
-    <p>Copyright ~~~</p>
+    <p>Copyright</p>
   </footer>
+  </div>
 </body>
 </html>

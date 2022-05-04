@@ -1,0 +1,168 @@
+/* 초기화 */
+* { 
+  list-style: none;
+  text-decoration: none;
+  margin: 0; padding: 0;
+}
+
+#wrap {
+  width: 1200px; height: 1000px;
+  margin: 0 auto;
+}
+
+/* 헤더 */
+header {
+  width: 1200px; height: 100px;
+ 
+}
+
+header > nav {
+  width: 500px; height: 100px;
+  float: right;
+}
+
+header > nav > ul > li {
+  width: 150px; height: 100px;
+  float: left;
+  text-align: center;
+}
+
+header > nav > ul > li > a {
+  padding: 35px;
+  display: block;
+}
+
+#logo {
+  width: 200px; height: 80px;
+  float: left;
+  padding: 0px 0px 0px 40px;
+}
+
+/* 헤더 메뉴 */
+#topmenu {
+  height: 60px;
+}
+
+#topmenu > li {
+  float: left;
+  position: relative;
+}
+
+#topmenu > li > a {
+  display: block;
+  color: black;
+  font-weight: 600;
+}
+
+/* 메인 */
+main {
+  width: 1200px; height: 600px;
+  /* background-color: blue; */
+}
+
+#tabmenu {
+  width: 898px; height: 600px;
+  border: 1px solid black;
+  float: left;
+}
+
+#tabmenu input[type="radio"] {
+  display: none;
+}
+
+#tabmenu label {
+  width: 150px; height: 60px;
+  border: 1px solid black;
+  float: left;
+  line-height: 60px;
+  text-align: center;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#tabmenu label:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+#tabMenu input:checked+label{
+  color: #b00;
+  border: 1px solid #ddd;
+  background-color: #eee;
+}
+
+.tab {
+  display: none;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+.tab > ul > li > img {
+  width: 230px;
+  height: 150px;
+  border-radius: 10%;
+ 
+}
+
+#burger > ul > li {
+  display: inline-block;
+  cursor: pointer;
+  
+}
+
+#side > ul > li {
+  display: inline-block;
+  cursor: pointer;
+  margin: 20px;
+
+}
+
+#juice > ul > li {
+  display: inline-block;
+  cursor: pointer;
+
+}
+
+#tab1:checked~#burger,
+#tab2:checked~#side,
+#tab3:checked~#juice{
+    display: block;
+}
+
+#basket {
+  width: 299px; height: 600px;
+  border-bottom: none;
+  float: left;
+  text-align: center;
+  position: relative;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+}
+
+#basket > h1 {
+  margin-top: 30px;
+}
+
+#on {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 150px;
+  height: 50px;
+ }
+ 
+ #off {
+   position: absolute;
+   right: 0px;
+   bottom: 0px;
+   width: 150px;
+   height: 50px;
+ }
+
+/* 푸터 */
+
+footer {
+  width: 1200px; height: 100px;
+  text-align: center;
+  border: 1px solid black;
+}
